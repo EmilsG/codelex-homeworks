@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.heading1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.heading2 {
+    font-size:16px;
+    margin-bottom: 15px;
+}
+
+.notification__heading {
+    font-size:20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box {
+    margin-bottom: 15px;
+}
+
+.flexbox {
+    display: flex
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.badge {
+    font-size: 14px;
+    line-height: 17px;
+    color: #1676F3;
+    background-color: #E8F2FE;
+    width: 53px;
+    height: 25px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.badge--green {
+    color: #00A344;
+    background-color:#E8F9EF;
+}
+
+.badge--red {
+    color:#F52419;
+    background-color:#FFEDEC;
+}
+
+.badge--black {
+    color: #3F4C5D;
+    background-color:#F3F5F7;
+}
+
+.badge--primary {
+    color:#FFFFFF;
+    background-color:#1676F3;
+}
+
+.badge--primarygreen {
+    color:#FFFFFF;
+    background-color:#15C15D;
+}
+
+.badge--primaryred {
+    color:#FFFFFF;
+    background-color:#FF4238;
+}
+
+.badge--primaryblack {
+    color:#FFFFFF;
+    background-color:#192434;
+}
+
+.badge--pill {
+   border-radius: 25px; 
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #0074DB;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    padding: 10px 12px;
+    line-height: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer
+}
+
+.button:hover {
+    background-color: #105A9C;
+}
+
+.button:focus {
+    background-color: #105A9C;
+}
+
+.button:disabled {
+    background-color: #83B7E5;
+    cursor:not-allowed
+}
+
+.button--secondary {
+    color:#000000;
+    background-color: #E9E9E9;
+}
+
+.button--secondary:hover {
+    background-color: #D9D9D9;
+}
+
+.button--secondary:focus {
+    background-color:#D9D9D9;
+}
+
+.button--secondary:disabled {
+    background-color: #F9F9F9;
+    color: #9A9A9A;
+}
+
+.button--outlined {
+    border: 1px solid #C2C2C2 ;
+    background-color: #FFFFFF;
+    color:#000000;
+}
+
+.button--outlined:focus {
+    background-color:#D9D9D9;
+}
+
+.button--outlined:hover {
+    background-color:#D9D9D9;
+}
+
+.button--outlined:disabled {
+    background-color:#FFFFFF;
+    color:#9E9E9E;
+}
+
+.rectangle {
+    width: 800px;
+    height: 463px;
+    background-color: #000000;
+}
+
+.button--rectangle {
+    width: 245px;
+    height: 60px;
+    color: #FFFFFF;
+    background-color:#000000;
+    border: #15499F 2px solid;
+    display:flex;
+    margin-left: 44px;
+    margin-top: 40px;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+.button--rectangle:hover {
+    border:#246CE2 4px solid;
+    background-color:#000000;
+}
+
+.button--rectangle:active {
+    border:none;
+    background-color:#0B2550;
+}
+
+.button--rectangle:disabled {
+    border:none;
+    background-color:#A9A9A9;
+}
+
+.button--outline {
+    color: #6E41E2;
+    background-color: transparent;
+    border: #6E41E2 1px solid;
+}
+
+.button--outline:hover{
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.button--blank {
+    border: none
+}
+.notification {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    max-width: 394px;
+    display: grid;
+    grid-template-columns: auto 52px;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+    padding: 20px;
+}
+
+.notification__heading {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.notification__paragraph {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.notification__status {
+    width: 56px;
+    height: 56px;
+    background-color:#E3DAF9;
+    display:flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.notification__actions {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
